@@ -15,6 +15,7 @@
 		FCB3AEA0201796C10041818B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB3AE9E201796C10041818B /* Main.storyboard */; };
 		FCB3AEA2201796C10041818B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCB3AEA1201796C10041818B /* Assets.xcassets */; };
 		FCB3AEA5201796C10041818B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB3AEA3201796C10041818B /* LaunchScreen.storyboard */; };
+		FCE3DD8C202AA8430022159C /* CustomTeamsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE3DD8B202AA8430022159C /* CustomTeamsController.swift */; };
 		FCF1C2BD201C2EB300FC4A4C /* DualModeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF1C2BC201C2EB300FC4A4C /* DualModeController.swift */; };
 		FCF1C2BF201C2F6900FC4A4C /* 1vs3ModeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF1C2BE201C2F6900FC4A4C /* 1vs3ModeController.swift */; };
 		FCF1C2C1201C376300FC4A4C /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF1C2C0201C376300FC4A4C /* SettingsController.swift */; };
@@ -33,6 +34,7 @@
 		FCB3AEA1201796C10041818B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCB3AEA4201796C10041818B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCB3AEA6201796C10041818B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCE3DD8B202AA8430022159C /* CustomTeamsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTeamsController.swift; sourceTree = "<group>"; };
 		FCF1C2BC201C2EB300FC4A4C /* DualModeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualModeController.swift; sourceTree = "<group>"; };
 		FCF1C2BE201C2F6900FC4A4C /* 1vs3ModeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1vs3ModeController.swift; sourceTree = "<group>"; };
 		FCF1C2C0201C376300FC4A4C /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				FCB3AE9C201796C10041818B /* SingleModeController.swift */,
 				FCF1C2BE201C2F6900FC4A4C /* 1vs3ModeController.swift */,
 				FCF1C2BC201C2EB300FC4A4C /* DualModeController.swift */,
+				FCE3DD8B202AA8430022159C /* CustomTeamsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				FC19E8702021A963007E702F /* TeamBank.swift in Sources */,
 				FCB3AE9B201796C10041818B /* AppDelegate.swift in Sources */,
 				FCF1C2BF201C2F6900FC4A4C /* 1vs3ModeController.swift in Sources */,
+				FCE3DD8C202AA8430022159C /* CustomTeamsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
