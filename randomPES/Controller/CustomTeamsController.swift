@@ -20,9 +20,11 @@ class CustomTeamsController: UITableViewController {
         return teamArray.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "TeamItemCell")
+        let cell = UITableViewCell(style: .value1, reuseIdentifier: "TeamItemCell")
         //let cell = tableView.dequeueReusableCell(withIdentifier: "TeamItemCell", for: indexPath)
-        cell.textLabel?.text = teamArray[indexPath.row].teamName
+        cell.textLabel?.text = "\(teamArray[indexPath.row].teamName)"
+        cell.detailTextLabel?.text = "\(teamArray[indexPath.row].teamStar) stars"
+        cell.detailTextLabel?.textColor = UIColor.lightGray
         let item = teamArray[indexPath.row]
         
         cell.accessoryType = item.select ? .checkmark : .none
