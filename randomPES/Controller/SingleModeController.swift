@@ -11,7 +11,6 @@ import UIKit
 class SingleModeController: UIViewController {
     var teamArray: [Team]!
     var randomTeamIndex : Int = 0
-    let generator = UIImpactFeedbackGenerator(style: .heavy)
     var images: [UIImage]! = []
     
     @IBOutlet weak var teamLabel: UILabel!
@@ -49,7 +48,6 @@ class SingleModeController: UIViewController {
         randomTeamIndex = Int(arc4random_uniform(UInt32(teamArray.count)))
         UIView.transition(with: teamImageView, duration: 1, options: .transitionCrossDissolve, animations: {
             self.teamImageView.image = UIImage.animatedImage(with: self.images, duration: 1)
-            self.generator.impactOccurred()
         }, completion: {
             finished in
             self.teamImageView.image = UIImage(named : self.teamArray[self.randomTeamIndex].teamImage)
