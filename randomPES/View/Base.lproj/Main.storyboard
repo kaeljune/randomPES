@@ -530,13 +530,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kSs-rp-BfO" userLabel="Center Container">
                                 <rect key="frame" x="0.0" y="203.5" width="375" height="260"/>
                                 <subviews>
-                                    <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yDk-Xp-8pg">
-                                        <rect key="frame" x="0.0" y="30" width="375" height="200"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="tintColor" red="0.67679251269999996" green="0.1495045357" blue="0.066857269809999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wXv-JY-Ajp" userLabel="Picker View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
                                     </pickerView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wXv-JY-Ajp" secondAttribute="trailing" id="0ud-JO-Z7b"/>
+                                    <constraint firstItem="wXv-JY-Ajp" firstAttribute="top" secondItem="kSs-rp-BfO" secondAttribute="top" id="0zr-79-fik"/>
+                                    <constraint firstAttribute="bottom" secondItem="wXv-JY-Ajp" secondAttribute="bottom" id="11B-Pe-ox7"/>
+                                    <constraint firstItem="wXv-JY-Ajp" firstAttribute="leading" secondItem="kSs-rp-BfO" secondAttribute="leading" id="URd-D4-fqS"/>
                                     <constraint firstAttribute="width" constant="375" id="aBO-h5-TPH"/>
                                     <constraint firstAttribute="height" constant="260" id="bEh-O4-wiO"/>
                                 </constraints>
@@ -615,7 +617,7 @@
                     <navigationItem key="navigationItem" title="Settings" id="b1t-dB-kow"/>
                     <connections>
                         <outlet property="TestButton" destination="ijz-ye-qR2" id="Byx-fi-0Uf"/>
-                        <outlet property="pickerView" destination="yDk-Xp-8pg" id="MH1-Qy-ecY"/>
+                        <outlet property="pickerView" destination="wXv-JY-Ajp" id="vcw-UO-qQM"/>
                         <segue destination="PRr-vo-Z0P" kind="show" identifier="ChangeTeams" id="Rqf-Ja-An7"/>
                         <segue destination="EJZ-gc-f7r" kind="show" identifier="CustomTeams" id="dTy-Mu-YBW"/>
                     </connections>

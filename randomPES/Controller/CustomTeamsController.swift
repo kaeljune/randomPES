@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+
 class CustomTeamsController: UITableViewController {
     var teamArray: [Team]!
     var teams : Array<Team> = []
@@ -54,7 +55,6 @@ class CustomTeamsController: UITableViewController {
             let barViewControllers = segue.destination as! UITabBarController
             let destinationViewController1 = barViewControllers.viewControllers?[0] as! SingleModeController
             destinationViewController1.teamArray = teams
-            print(teams)
             
             let destinationViewController2 = barViewControllers.viewControllers?[1] as! DualModeController
             destinationViewController2.teamArray = teams

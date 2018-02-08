@@ -13,12 +13,14 @@ class Team {
     let teamName : String
     let teamType : String
     let teamImage : String
+    let teamStar : Float
     var select : Bool = false
     
-    init(name : String, image : String, type: String) {
+    init(name : String, image : String, type: String, star: Float) {
         teamName = name
         teamImage = image
         teamType = type
+        teamStar = star
     }
     
 }
